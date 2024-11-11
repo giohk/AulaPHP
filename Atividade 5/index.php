@@ -15,18 +15,8 @@
         <button type="submit">Enviar</button>
     </form>
 
-    <?php
-    if (isset($_POST['nome']) && isset($_POST['idade'])) {
-        $nome = $_POST['nome'];
-        $idade = (int)$_POST['idade']; // Certifique-se de que a idade é um número inteiro
-        if ($idade < 18) { // Corrigido para incluir "if"
-            echo "<p>$nome, você tem $idade anos e, pela lei, só é permitido dirigir a partir dos 18. </p>";
-        } 
-            else {
-            echo "<p>$nome, você tem $idade anos e, pela lei, já tem a idade permitidade para dirigir.  </p>";
-        }
-    }
-    ?>
+    
+
     
 </body>
 </html
